@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.messages-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  min-width: 320px;
+}
+
+.message-item {
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 5px 0;
+  -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.priority-1 {
+  background-color: #F56236;
+}
+
+.priority-2 {
+  background-color: #FCE788;
+}
+
+.priority-3 {
+  background-color: #88FCA3;
+}
+
+.messages-list button {
+  background: transparent;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.primary-button {
+  padding: 8px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 10px;
+  background-color: #88FCA3;
+  cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
